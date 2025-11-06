@@ -18,7 +18,17 @@ It then stores the combined, cleaned data into a structured database (SQLite) an
 ⚙️ Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   movie-data-pipeline/  ├── etl.py            # Python script for ETL process  ├── schema.sql        # SQL schema for database tables  ├── queries.sql       # Analytical SQL queries  ├── requirements.txt  # Python dependencies  └── README.md         # Project documentation   `
+movie-data-pipeline/
+
+├── etl.py # Python script for ETL process
+
+├── schema.sql # SQL schema for database tables
+
+├── queries.sql # Analytical SQL queries
+
+├── requirements.txt # Python dependencies
+
+└── README.md # Project documentation   `
 
 🧩 Requirements
 
