@@ -18,17 +18,13 @@ It then stores the combined, cleaned data into a structured database (SQLite) an
 ⚙️ Project Structure
 --------------------
 
+```bash
 movie-data-pipeline/
-
-├── etl.py # Python script for ETL process
-
-├── schema.sql # SQL schema for database tables
-
-├── queries.sql # Analytical SQL queries
-
-├── requirements.txt # Python dependencies
-
-└── README.md # Project documentation   `
+├── etl.py            # Python script for ETL process
+├── schema.sql        # SQL schema for database tables
+├── queries.sql       # Analytical SQL queries
+├── requirements.txt  # Python dependencies
+└── README.md         # Project documentation `
 
 🧩 Requirements
 
@@ -47,7 +43,8 @@ movie-data-pipeline/
 
 Install dependencies:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
+```bash
+pip install -r requirements.txt   `
 
 **External API**
 
@@ -56,7 +53,8 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Store it in a .env file or directly in your script:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   OMDB_API_KEY=your_api_key_here   `
+```bash
+OMDB_API_KEY=your_api_key_here   `
 
 🛠️ Setup Instructions
 
@@ -64,11 +62,13 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 Run the SQL schema to create tables:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   sqlite3 movies.db < schema.sql   `
+```bash
+sqlite3 movies.db < schema.sql   `
 
 ### 2\. Run the ETL Pipeline
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python etl.py   `
+```bash
+python etl.py   `
 
 This script will:
 
@@ -85,7 +85,8 @@ This script will:
 
 Once data is loaded, open your database in SQLite and execute:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .read queries.sql   `
+```bash
+.read queries.sql   `
 
 🧠 Database Design
 
