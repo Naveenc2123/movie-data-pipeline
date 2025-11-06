@@ -63,12 +63,14 @@ OMDB_API_KEY=your_api_key_here   `
 Run the SQL schema to create tables:
 
 ```bash
-sqlite3 movies.db < schema.sql  ```
+sqlite3 movies.db < schema.sql
+ ```
 
 ### 2\. Run the ETL Pipeline
 
 ```bash
-python etl.py   ```
+python etl.py
+ ```
 
 This script will:
 
@@ -86,7 +88,8 @@ This script will:
 Once data is loaded, open your database in SQLite and execute:
 
 ```bash
-.read queries.sql   ```
+.read queries.sql
+ ```
 
 🧠 Database Design
 
