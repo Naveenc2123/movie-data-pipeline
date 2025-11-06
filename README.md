@@ -25,7 +25,7 @@ movie-data-pipeline/
 ├── queries.sql       # Analytical SQL queries
 ├── requirements.txt  # Python dependencies
 └── README.md         # Project documentation `
-
+```
 🧩 Requirements
 
 **Languages / Libraries**
@@ -45,7 +45,7 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt   `
-
+```
 **External API**
 
 *   OMDb API key — get it from: http://www.omdbapi.com/apikey.aspx
@@ -55,7 +55,7 @@ Store it in a .env file or directly in your script:
 
 ```bash
 OMDB_API_KEY=your_api_key_here   `
-
+```
 🛠️ Setup Instructions
 
 ### 1\. Database Setup
@@ -63,12 +63,12 @@ OMDB_API_KEY=your_api_key_here   `
 Run the SQL schema to create tables:
 
 ```bash
-sqlite3 movies.db < schema.sql   `
+sqlite3 movies.db < schema.sql  ```
 
 ### 2\. Run the ETL Pipeline
 
 ```bash
-python etl.py   `
+python etl.py   ```
 
 This script will:
 
@@ -86,7 +86,7 @@ This script will:
 Once data is loaded, open your database in SQLite and execute:
 
 ```bash
-.read queries.sql   `
+.read queries.sql   ```
 
 🧠 Database Design
 
