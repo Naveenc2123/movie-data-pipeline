@@ -124,4 +124,4 @@ These queries are included in queries.sql.
 
 🧾 Author
 
-**Naveen C Email : naveen22442123@gmail.com**
+**Naveen CEmail : naveen22442123@gmail.com**
